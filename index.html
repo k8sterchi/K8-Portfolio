@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K8's Portfolio</title>
-    <link rel="reset" href="reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+ 
+  <body>
 
-</head>
-<body>
     <header>
-        <h1>Kate Sterchi</h1>
-        <div>
-            <nav>
-                <ul>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Portfolio</a></li>
-                    <li> <a href="#">About</a></li>
-                </ul>
-            </nav>\
-        </div>
+      <img src="Images/Portfolio_image.jpeg">
+      <h1>Kate Sterchi</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio of Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="section" id="about">
+    <main>
+
+      <div class="section" id="about">
         <h2>About Me</h2>
         <div>
-            <img src="./Images/stock_image_road.jpeg">
-            <p>Some text here about me and a brief description of my interests as a web developer.
-            </p>
+          <img src="./Images/Portfolio_image.jpeg" />
+          <p>
+            Hello! My name is Kate (K8), and I am new to coding and web development.
+            While, I am from Texas originally, I lived in Copenhagen, Denmark for nearly seven years. 
+            I finished my master in studio art while living there and already see so many ways to incorporate coding into my art practice. 
+            I am excited to publish more projects on this page, but for now the portfolio holds placeholder project ideas. 
+            Thank you for visiting my page. If you would like to get in contact with me, click the "contact" link or scroll to the bottom 
+            where you can fill out the contact form. I look forward to hearing from you!
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div class="section" id="portfolio">
+      <div class="section" id="portfolio">
         <h2>Portfolio</h2>
         <div id="Images">
-            <img src="./Images/stock_image_road.jpeg">
-            <img src="./Images/stock_image_road.jpeg">
-            <img src="./Images/stock_image_road.jpeg">
+          <img src="./Images/stock_image_road.jpeg" />
+          <img src="./Images/stock_image_road.jpeg" />
+          <img src="./Images/stock_image_road.jpeg" />
         </div>
+      </div>
 
-
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <div>
-                <img src="./Images/stock_image_road.jpeg">
-                <p>Some text here about me and a brief description of my interests as a web developer.
-                </p>
-            </div>
+      <div class="section" id="contact">
+        <h2>Contact</h2>
+        <div>
+          <img src="./Images/contact_image.jpeg" />
+          <p>
+            Reach me best by email! 
+            </p>
+            <input type="text">
+            <input type="email">
+            <button type="button">Send</button>
         </div>
-</body>
+      </div>
+
+    </main>
+    <footer>github link back to top link xo k8</footer>
+
+  </body>
+
 </html>
