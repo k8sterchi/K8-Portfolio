@@ -1,45 +1,87 @@
 header {
-    position: fixed;
-    width: 100%;
-    background-color: #ffc0cb80;
-    font-size: larger;
-    border: dashed black;
-    padding-left: 3%;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #ffc0cb80;
+  font-size: larger;
+  border: dashed rgb(45, 230, 101);
+  padding-left: 3%;
 }
 
 header img {
-    width: 100px;
-    border-radius: 50px;
-    margin: 20px;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50px;
+  margin: 20px;
 }
 
-header li{
-    display: inline;
-    margin: 20px;
+nav {
+  width: 100%;
 }
 
-.nav {
-display: flex;
-justify-content: end;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-item a {
+  padding: 20px;
 }
 
 main {
-    padding-top: 200px;
+  padding-top: 165px;
+  border: dotted rgb(212, 28, 58);
+}
+.flex-container {
+  display: flex;
+  background-color: #1e90ff30;
+  align-items: center;
 }
 
+.details {
+  display: flex;
+  flex: 0 1 100%;
+  align-items: center;
+  gap: 1em;
+}
+
+.flex-container > div {
+  background-color: #0000ff10;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+}
+.aside {
+  flex: 0 0 15%;
+  border-right: solid 2px #00000070;
+  min-height: 300px;
+  text-align: right;
+  padding-right: 30px;
+  font-size: 25px;
+  color: #00000070;
+}
+/*
 img {
-    width: 200px;
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .section h2 {
     flex: 0 0 20%;
-    /*height: 30%;*/
+    /*height: 30%;
     min-height: 300px;
     border-right: solid 2px black;
     text-align: right;
@@ -47,10 +89,61 @@ img {
 }
 .section div {
     display: flex;
-    flex: 0 0 75%;
+    flex-wrap: wrap;
+    flex: 0 0 80%;
     padding-left: 20px;
 }
 
 .section div p {
     margin-left: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.gallery li {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+*/
+
+@media screen and (max-width: 992px) {
+  header {
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  .nav-links,
+  .flex-container,
+  .details {
+    background-color: yellow;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header,
+  .nav-links .flex-container,
+  .details {
+    background-color: greenyellow;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
