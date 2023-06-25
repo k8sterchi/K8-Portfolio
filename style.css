@@ -36,9 +36,19 @@ main {
   padding-top: 165px;
   border: dotted rgb(212, 28, 58);
 }
+
+/*.flex-container::before { 
+  content: "";
+  display: block;
+  height: 650px;     
+  visibility: hidden;
+  pointer-events: none;
+}*/
+
+
 .flex-container {
   display: flex;
-  background-color: #1e90ff30;
+  background-color: #1eff4730;
   align-items: center;
 }
 
@@ -50,76 +60,33 @@ main {
 }
 
 .flex-container > div {
-  background-color: #0000ff10;
+  background-color: #0000ff;
   width: 100%;
-  margin: 10px;
   font-size: 20px;
 }
 .aside {
+  display: flex;
   flex: 0 0 15%;
-  border-right: solid 2px #00000070;
-  min-height: 300px;
-  text-align: right;
-  padding-right: 30px;
   font-size: 25px;
   color: #00000070;
-}
-/*
-img {
-    display: flex;
-    width: 100%;
-    max-width: 200px;
-    max-height: 200px;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
 }
 
-.section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.image-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.section h2 {
-    flex: 0 0 20%;
-    /*height: 30%;
-    min-height: 300px;
-    border-right: solid 2px black;
-    text-align: right;
-    padding-right: 30px;
-}
-.section div {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 80%;
-    padding-left: 20px;
+.big-img {
+  width: 100%;
+  max-height: 300px;
 }
 
-.section div p {
-    margin-left: 20px;
+.lil-img {
+  width: 50%;
 }
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-
-.gallery li {
-    position: relative;
-    cursor: pointer;
-}
-
-
-.gallery li img {
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 5px;
-}
-
-*/
 
 @media screen and (max-width: 992px) {
   header {
@@ -131,16 +98,23 @@ img {
   header,
   .nav-links,
   .flex-container,
-  .details {
+  .details,
+  .img-row {
+    display: flex;
     background-color: yellow;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 576px) {
   header,
-  .nav-links .flex-container,
-  .details {
+  .nav-links,
+  .flex-container,
+  .details,
+  .img-row {
+    display: flex;
     background-color: greenyellow;
     flex-direction: column;
     align-items: center;
