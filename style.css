@@ -37,15 +37,6 @@ main {
   border: dotted rgb(212, 28, 58);
 }
 
-/*.flex-container::before { 
-  content: "";
-  display: block;
-  height: 650px;     
-  visibility: hidden;
-  pointer-events: none;
-}*/
-
-
 .flex-container {
   display: flex;
   background-color: #1eff4730;
@@ -81,11 +72,18 @@ main {
 
 .big-img {
   width: 100%;
-  max-height: 300px;
+  padding: 10px;
 }
 
 .lil-img {
   width: 50%;
+  padding: 10px;
+}
+
+.img-buttons > * {
+  border-radius: 20%;
+  max-width: 200px;
+
 }
 
 @media screen and (max-width: 992px) {
@@ -119,5 +117,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lil-img {
+    width: 100%;
   }
 }
