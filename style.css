@@ -1,3 +1,7 @@
+/* body > * {
+  margin-top: 165px;
+} */
+
 header {
   display: flex;
   position: fixed;
@@ -6,6 +10,7 @@ header {
   font-size: larger;
   border: dashed rgb(45, 230, 101);
   padding-left: 3%;
+  z-index: 1;
 }
 
 header img {
@@ -34,8 +39,8 @@ nav {
 
 main {
   padding-top: 165px;
-  border: dotted rgb(212, 28, 58);
-}
+  border: dashed rgb(212, 28, 58);
+} 
 
 .flex-container {
   display: flex;
@@ -47,11 +52,12 @@ main {
   display: flex;
   flex: 0 1 100%;
   align-items: center;
+  padding: 10px;
   gap: 1em;
 }
 
 .flex-container > div {
-  background-color: #0000ff;
+  background-color: #1eff4730;
   width: 100%;
   font-size: 20px;
 }
@@ -70,20 +76,74 @@ main {
   flex-direction: column;
 }
 
+.big-lable-container{
+  position: relative;
+}
+
+.top-left-big {
+  display: flex;
+  position: absolute;
+  padding: 7%;
+  background-color: #7fffd480;
+  color: white;
+}
+
+.top-left-big:hover{
+  background-color: black;
+}
+
 .big-img {
   width: 100%;
   padding: 10px;
 }
 
-.lil-img {
-  width: 50%;
-  padding: 10px;
+.img-row {
+  display: flex;
 }
 
-.img-buttons > * {
-  border-radius: 20%;
-  max-width: 200px;
+.bottom-left-lil {
+display: flex;
+position: absolute;
+padding: 3%;
+background-color: #7fffd480;
+color: azure;
+}
 
+.bottom-left-lil:hover {
+  background-color: black;
+}
+
+.img-row img {
+  max-width: 100%;
+  padding: .5rem;
+}
+
+/* .lil-img {
+  width: 50%;
+  padding: 10px;
+} */
+.img-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.img-buttons * {
+  border-radius: 20%;
+  max-width: 195px;
+  padding: 10px;
+  width: 50%;
+  display: inline-block;
+}
+
+.contactme {
+  background-image: url("./Images/contact_image.png");
+  color: transparent;
+}
+.contactme:hover {
+  color: black;
+  box-shadow: 5px 5px 5px rgb(143, 37, 37);
+  transition: .2s ease-in-out;
 }
 
 @media screen and (max-width: 992px) {

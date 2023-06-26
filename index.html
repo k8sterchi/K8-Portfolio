@@ -9,7 +9,6 @@
   </head>
 
   <body>
-
     <header>
       <nav class="navbar">
         <div>
@@ -25,8 +24,8 @@
     </header>
 
     <main>
-      <div class="flex-container" id="about">
-        <div class="aside"><h2>About</h2></div>
+      <div class="flex-container">
+        <h2 id="about" class="aside">About</h2>
         <div class="details">
           <div><img src="./Images/Portfolio_image.png" /></div>
           <div>
@@ -45,20 +44,38 @@
       <div class="flex-container">
         <h2 id="portfolio" class="aside">Portfolio</h2>
         <div class="image-container">
-          <div><img src="./Images/group_clown.png" class="big-img" /></div>
+          <div class="big-lable-container">
+            <img src="./Images/group_clown.png" class="big-img" />
+          </div>
+          <div class="top-left-big">BIG IMG LABEL</div>
+
+
           <div class="img-row">
-            <img src="./Images/group_clown.png" class="lil-img" /><img
-              src="./Images/group_clown.png"
-              class="lil-img"/>
+            <div>
+              <div class="bottom-left-lil">LIL1 LABEL</div>
+              <img src="./Images/group_clown.png" class="lil-img" />
+            </div>
+
+            <div>
+              <div class="bottom-left-lil">LIL2 LABEL</div>
+              <img src="./Images/group_clown.png" class="lil-img" />
+            </div>
+
           </div>
         </div>
       </div>
 
-      <div class="flex-container" id="contact">
-        <div class="aside"><h2>Contact</h2></div>
+      <div class="flex-container">
+        <h2 id="contact" class="aside">Contact</h2>
         <div class="img-buttons">
-          <img src="./Images/contact_image.png"/>
-          <img src="./Images/Github_image.png"/>
+
+          <div class="contactme">
+            <p>email@email.com</p>
+          </div>
+
+          <img src="./Images/Github_image.png" class="button-links" />
+          <img src="./Images/github-mark.png" />
+          <img src="./Images/In-White-128@2x.png" />
         </div>
       </div>
     </main>
