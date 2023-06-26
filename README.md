@@ -2,7 +2,7 @@
 ## Description
 For this project, I created a web application where I can store and display the different projects I have completed as a web developer. I utilized flexbox, media queries, and CSS variables so that the style of the site enhances both the ease of navigation and the presentation of my work. Because more projects will be added to this site over time, the code for this web application was written with that in mind. Adaptable styling and responsive web design will ensure that my site is well presented no matter how many applications are add to the portfolio or what device is used to view the site.
 
-Check out my webpage [here](https://duckduckgo.com) 🚀
+Check out my webpage [here](https://k8sterchi.github.io/K8-Portfolio/) 🚀
 
 ## Given
 I was given the following user story, acceptance criteria, and a mock up example of the desired end result to guide my building process.
