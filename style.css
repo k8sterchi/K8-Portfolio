@@ -1,6 +1,5 @@
-/* body > * {
-  margin-top: 165px;
-} */
+/* ?? When i make the header fixed position, 
+the nav links bring the main to the top under the header*/
 
 header {
   display: flex;
@@ -29,6 +28,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-links {
   display: flex;
 }
@@ -39,10 +39,16 @@ nav {
   font-weight: bold;
 }
 
-/* main {
+/*This is how i work around the fixed position issue, 
+but it only "works" visually at first, when links are click, 
+the content goes under the header*/
+/*main {
   padding-top: 165px;
   border: dashed rgb(212, 28, 58);
 }  */
+
+/* flexbox and psudo classes were used to further customize 
+and organize the responsive qualities of the application */
 
 .flex-container {
   display: flex;
@@ -139,12 +145,12 @@ a:active {
   padding: 0.5rem;
 }
 
-
 .img-buttons {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .img-buttons * {
   border-radius: 20%;
   max-width: 195px;
@@ -160,6 +166,7 @@ a:active {
   color: transparent;
   max-height: 185px;
 }
+
 .contactme:hover {
   color: greenyellow;
   font-weight: bold;
@@ -172,7 +179,6 @@ a:active {
   background-size: 100%;
   color: transparent;
   max-height: 185px;
-  
 }
 
 .socials:hover {
@@ -212,6 +218,8 @@ a:active {
   background-color: #ed3e5b80;
 }
 
+/* media queries allow me to stlye the display for different screen size */
+
 @media screen and (max-width: 992px) {
   header {
     background-color: pink;
@@ -245,6 +253,7 @@ a:active {
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   .lil-img {
     width: 100%;

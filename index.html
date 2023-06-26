@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-
+<!--Structured in a way to pair well with CSS in order to make site responsive to different viewports-->
   <body>
+    <!--Header with name and image of developer, 
+      navigation with links that allow UI scroll to corresponding section-->
     <header>
       <nav class="navbar">
         <div>
-          <img src="Images/Portfolio_image.png" />
+          <img
+            src="Images/Portfolio_image.png"
+            alt="woman at a desk in front of a diy green screen"
+            id="kate"
+          />
           <h1>Kate Sterchi</h1>
         </div>
         <ul class="nav-links">
@@ -27,7 +33,12 @@
       <div class="flex-container">
         <h2 id="about" class="aside">About</h2>
         <div class="details">
-          <div><img src="./Images/Portfolio_image.png" /></div>
+          <div>
+            <img
+              src="./Images/Portfolio_image.png"
+              alt="woman at a desk in front of a diy green screen"
+            />
+          </div>
           <div>
             <p>
               Hello! My name is Kate Sterchi. I am very new to web development,
@@ -40,36 +51,49 @@
           </div>
         </div>
       </div>
-
+<!--Titled applications with placeholder image, first application is larger, 
+  images are working links that could someday take you to the project-->
       <div class="flex-container">
         <h2 id="portfolio" class="aside">Portfolio</h2>
         <div class="image-container">
           <div class="big-lable-container">
-            <img src="./Images/group_clown.png" class="big-img" />
+            <img
+              src="./Images/group_clown.png"
+              alt="four clowns about to play a boardgame"
+              class="big-img"
+            />
           </div>
-          <a href="https://www.google.com/" target="blank" class="top-left-big">
+          <a href="https://www.github.com/" target="blank" class="top-left-big">
             Application #1</a
           >
 
           <div class="img-row">
             <div>
               <a
-                href="https://www.google.com/"
+                href="https://www.github.com/"
                 target="blank"
                 class="top-left-lil"
                 >Application #2</a
               >
-              <img src="./Images/group_clown.png" class="lil-img" />
+              <img
+                src="./Images/group_clown.png"
+                alt="four clowns about to play a boardgame"
+                class="lil-img"
+              />
             </div>
 
             <div>
               <a
-                href="https://www.google.com/"
+                href="https://www.github.com/"
                 target="blank"
                 class="top-left-lil"
                 >Application #3</a
               >
-              <img src="./Images/group_clown.png" class="lil-img" />
+              <img
+                src="./Images/group_clown.png"
+                alt="four clowns about to play a boardgame"
+                class="lil-img"
+              />
             </div>
           </div>
         </div>
@@ -94,6 +118,12 @@
       </div>
     </main>
     <footer class="footer">
-      <p>thanks for checking out my site.</p></footer>
+      <p>thanks for checking out my site.</p>
+      <p>
+        someday the application links will actually take you to something I
+        made!
+      </p>
+      <a href="#kate">Back to Top</a>
+    </footer>
   </body>
 </html>
